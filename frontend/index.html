@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football video analysis</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>p-soccer</h1>
+      <p>Upload a video to run YOLOv8 analysis. Download the annotated video and view statistics when processing is complete.</p>
+    </header>
+
+    <section class="upload-section">
+      <form id="upload-form">
+        <label class="file-label" for="file-input">
+          <span class="file-label-text">Choose video file</span>
+          <span class="file-name" id="file-name">No file chosen</span>
+          <input type="file" id="file-input" name="file" accept="video/*" required>
+        </label>
+        <button type="submit" id="submit-btn" disabled>Upload & analyze</button>
+      </form>
+    </section>
+
+    <section class="status-section hidden" id="status-section">
+      <h2>Status</h2>
+      <p id="status-text">Pending…</p>
+      <div class="progress-placeholder" id="progress-placeholder"></div>
+    </section>
+
+    <section class="result-section hidden" id="result-section">
+      <h2>Statistics</h2>
+      <pre id="stats-display"></pre>
+      <p>
+        <a id="download-link" href="#" download class="button">Download annotated video</a>
+      </p>
+    </section>
+
+    <section class="error-section hidden" id="error-section">
+      <h2>Error</h2>
+      <p id="error-text"></p>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

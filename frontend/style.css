@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #0f1419;
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+header p {
+  margin: 0;
+  color: #8b949e;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.upload-section {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.file-label-text {
+  font-weight: 500;
+}
+
+.file-name {
+  font-size: 0.875rem;
+  color: #8b949e;
+}
+
+#file-input {
+  margin-top: 0.25rem;
+}
+
+#submit-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #238636;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submit-btn:hover:not(:disabled) {
+  background: #2ea043;
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-section,
+.result-section,
+.error-section {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.status-section h2,
+.result-section h2,
+.error-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+}
+
+#stats-display {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: auto;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+}
+
+.download-link.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #238636;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.download-link.button:hover {
+  background: #2ea043;
+}
+
+#error-text {
+  color: #f85149;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
